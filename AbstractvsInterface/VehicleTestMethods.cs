@@ -8,6 +8,7 @@ namespace AbstractvsInterface
 {
     //interfaceler kod yazmaktan çok oluşturulan yapının sözleşmeleridir taslağı belirler,yeteneklerini kapsar
     //c# 8 den önce interfaceler içerisinde kod yazılamıyordu 8'den sonra sadece "static kodlar" yazılabilmektedir.
+    //Classlar veya abstract classlar 1 kez inherit edilebilir interfaceler birden fazla olabilir.
     public interface IVehicle
     {
         void Go();
@@ -23,34 +24,38 @@ namespace AbstractvsInterface
         void Soar();
     }
 
-    public class Car : IVehicle
+    public abstract class BaseVehicle:IVehicle
     {
         public void Go()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Vehicle is going");
         }
 
         public void Stop()
+        {
+            Console.WriteLine("Vehicle has stopped");
+
+        }
+    }
+
+    public class Car : BaseVehicle
+    {
+
+    }
+
+    public class Bike : BaseVehicle,  IRideable
+    {
+        public void Ride()
         {
             throw new NotImplementedException();
         }
     }
 
-    public class Bike : IVehicle, IRideable
+    public class Plane : BaseVehicle,  IFlyable
     {
-        public void Go()
+        public void Soar()
         {
             throw new NotImplementedException();
         }
-        public void Stop()
-        {
-            throw new NotImplementedException();
-        }
-        public void Ride()
-        {
-            throw new NotImplementedException();
-        }
-
-       
     }
 }
