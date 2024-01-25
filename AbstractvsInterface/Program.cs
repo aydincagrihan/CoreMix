@@ -20,3 +20,8 @@ plane.Go();
 plane.Stop();
 plane.Soar();
 
+
+var bike=new Bike();
+bike.Go();
+bike.Stop();
+bike.Ride();
