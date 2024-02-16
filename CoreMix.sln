@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractvsInterface", "Abst
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StructVSClass", "StructVSClass\StructVSClass.csproj", "{2BFC415D-DDE7-4B0C-95EC-354DF6A85EF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciples", "SolidPrinciples\SolidPrinciples.csproj", "{A0B7DD1C-17AA-4D6C-B595-A033E7F6C328}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolidPrinciples", "SolidPrinciples\SolidPrinciples.csproj", "{A0B7DD1C-17AA-4D6C-B595-A033E7F6C328}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateTestApp", "DelegateTestApp\DelegateTestApp.csproj", "{3254334E-3447-47EE-AA39-1D0676F549EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WinFormApps", "WinFormApps", "{A8130E80-31B1-4E4D-B195-88320E993B05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +43,16 @@ Global
 		{A0B7DD1C-17AA-4D6C-B595-A033E7F6C328}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0B7DD1C-17AA-4D6C-B595-A033E7F6C328}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0B7DD1C-17AA-4D6C-B595-A033E7F6C328}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3254334E-3447-47EE-AA39-1D0676F549EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3254334E-3447-47EE-AA39-1D0676F549EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3254334E-3447-47EE-AA39-1D0676F549EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3254334E-3447-47EE-AA39-1D0676F549EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3254334E-3447-47EE-AA39-1D0676F549EE} = {A8130E80-31B1-4E4D-B195-88320E993B05}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BA7159BD-6F26-4A74-A0F1-5320B1DCC4EA}
