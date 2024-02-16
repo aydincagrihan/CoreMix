@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessModifiers", "AccessMo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractvsInterface", "AbstractvsInterface\AbstractvsInterface.csproj", "{F9638FFA-BFFD-430B-8F19-864F97B72A4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructVSClass", "StructVSClass\StructVSClass.csproj", "{2BFC415D-DDE7-4B0C-95EC-354DF6A85EF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StructVSClass", "StructVSClass\StructVSClass.csproj", "{2BFC415D-DDE7-4B0C-95EC-354DF6A85EF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciples", "SolidPrinciples\SolidPrinciples.csproj", "{A0B7DD1C-17AA-4D6C-B595-A033E7F6C328}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{2BFC415D-DDE7-4B0C-95EC-354DF6A85EF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BFC415D-DDE7-4B0C-95EC-354DF6A85EF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BFC415D-DDE7-4B0C-95EC-354DF6A85EF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0B7DD1C-17AA-4D6C-B595-A033E7F6C328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0B7DD1C-17AA-4D6C-B595-A033E7F6C328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0B7DD1C-17AA-4D6C-B595-A033E7F6C328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0B7DD1C-17AA-4D6C-B595-A033E7F6C328}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
