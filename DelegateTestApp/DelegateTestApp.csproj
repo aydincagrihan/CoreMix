@@ -58,6 +58,8 @@
     <Compile Include="Models\PostModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestCreators\BaseRequestCreator.cs" />
+    <Compile Include="RequestCreators\CreatePostRequestCreator.cs" />
     <Compile Include="RequestCreators\GetPostRequestCreator.cs" />
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

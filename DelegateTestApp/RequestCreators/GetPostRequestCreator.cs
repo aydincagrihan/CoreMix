@@ -3,24 +3,30 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace DelegateTestApp.RequestCreators
 {
-    public class GetPostRequestCreator
+    public class GetPostRequestCreator:BaseRequestCreator
     {
-        public List<PostModel> MakeRequest()
+        public async Task<List<PostModel>> GetPosts()
         {
-            //BaseUrl
-            //Path
-            //HttpMethod post ?geT?
+            var responseContent = await base.MakeRequest();
+            return JsonConvert.DeserializeObject<List<PostModel>>(responseContent);
+        }
 
-            HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com");
-            var httpRes = client.GetAsync("posts").GetAwaiter().GetResult();
-            httpRes.EnsureSuccessStatusCode();
-            var resultContent = httpRes.Content.ReadAsStringAsync().GetAwaiter().GetResult();
-            var posts = JsonConvert.DeserializeObject<List<PostModel>>(resultContent);
-            return posts;
+
+        protected override string GetBaseAddress()
+        {
+            return "https://jsonplaceholder.typicode.com/";
+        }
+        protected override HttpMethod GetHttpMethod()
+        {
+            return HttpMethod.Get;
+        }
+        protected override string GetUrlPath()
+        {
+            return "posts";
         }
     }
 }

@@ -18,11 +18,17 @@ namespace DelegateTestApp
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-            GetPostRequestCreator req = new GetPostRequestCreator();
-            var post=req.MakeRequest();
-            MessageBox.Show(post.FirstOrDefault().Title);
+            var req = new GetPostRequestCreator();
+            var posts = await req.GetPosts();
+            MessageBox.Show(posts.FirstOrDefault()?.Title);
+        }
+
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CreatePostRequestCreator post=new CreatePostRequestCreator();
         }
     }
 }
